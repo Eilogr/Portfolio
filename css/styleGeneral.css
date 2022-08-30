@@ -1,0 +1,253 @@
+*
+{
+    box-sizing: border-box;
+}
+
+/*  BASE STYLES  */
+body, html 
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 67.5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    overflow: hidden; 
+    overflow-x: hidden;
+    position: absolute;
+}
+::-webkit-scrollbar 
+{
+    width: 0;
+}
+h1, h2
+{
+    font-size: 4rem;
+}
+
+/*  BODY'S SECTION'S  */
+.titlePart
+{
+    background-color: white;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    animation: makeTitle 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+}
+.titlePart h1
+{
+    font-size: 6rem;
+}
+.name
+{
+    color: darkblue;
+    font-size: 15rem;
+    display: inline-block;
+}
+.underLine
+{
+    top: 65%;
+    left: 40%;
+    position: absolute;
+    height: 1.5%;
+    width: 20%;
+    background-color: darkblue;
+}
+.About
+{
+    background-color: black;
+    color: white;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    font-size: 2.3rem;
+    z-index: -1;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+}
+.imageAndText
+{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 15%;
+    border: 0.5%;
+    border-color: white;
+    border-style: solid;
+    text-align: left;
+}
+.imageAndText p, img
+{
+    margin: 1%;
+}
+.container
+{
+    position: absolute;
+    border: 0.5%;
+    border-color: white;
+    border-style: solid;
+    width: 70%;
+    height: 5%;
+    margin-left: 15%;
+    margin-top: 27%;
+}
+.progress
+{
+    position: absolute;
+    background-color: orange;
+    width: 0%;
+    height: 80%;
+    margin: 0.3%;
+    animation-timing-function: linear;
+}
+.progressItems
+{
+    width: 100%;
+    margin-left: 4.5%;
+    justify-content: space-between;
+}
+.progressItems span
+{
+    margin-top: 4%;
+    margin-left: 25%;
+    justify-content: space-between;
+    display: inline-block;
+}
+.Skills
+{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(59, 59, 59);
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+}
+.backgroundImages
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+}
+.backgroundImages img
+{
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    border: 2%;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+.fromTop
+{
+    transform: translateY(-100vh);
+    animation-timing-function: linear;
+}
+.fromDown
+{
+    transform: translateY(100vh);
+    animation-timing-function: linear;
+}
+.skillInfo
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
+    font-size: 3rem; 
+}
+.skillInfo img
+{
+    width: 25%;
+}
+.skill1, .skill2, .skill3, .skill4
+{
+    background-color: rgba(216, 216, 216, 0.738);
+    width: 25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+}
+img.circlePersents 
+{
+    margin: 10% 0 0 0;
+    width: 40%;
+}
+.progressPersent
+{
+    margin: -24% 0 0 0;
+}
+.Targets
+{
+    background-color: skyblue;
+    color: aliceblue;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+}
+.Target h2
+{
+    position: absolute;
+}
+.roadMap
+{
+    margin-left: 16%;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.9rem;
+}
+.leftText
+{
+    margin-top: 4.5%;
+    width: 40%;
+}
+.leftText section
+{
+    margin-left: 20%;
+}
+.rightText
+{
+    margin-top: 18%;
+    margin-right: 20%;
+    width: 40%;
+}
+#map1
+{
+    margin-bottom: 26.5%;
+}
+#map3
+{
+    margin-top: 38%;
+}

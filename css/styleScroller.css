@@ -1,0 +1,235 @@
+/*  SCROLLER WAY  */
+.sectionAndScroll
+{
+    grid-row: auto;
+    min-height: 100%;
+    width: 100%;
+    flex-flow: row;
+}
+#Scroll
+{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 15%;
+    font-weight: 100%;
+    z-index: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(190, 190, 190);
+    font-family:'Goudy Old Style';
+    color: rgb(135, 110, 34);
+    font-size: 5px;
+}
+.ScrollWay1
+{
+    width: 5%;
+    height: 100%;
+    background-color: rgb(130, 130, 130);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ScrollWay2
+{
+    width: 5%;
+    height: 100%;
+    background-color: rgb(23, 23, 23);
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+.ScrollWay3
+{
+    width: 5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.316);
+    position: absolute;
+    top: 200%;
+    right: 0;
+}
+.ScrollWay4
+{
+    width: 5%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.833);
+    border-top: 0;
+    border-left: 2%;
+    border-right: 0;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    top: 300%;
+    right: 0;
+    z-index: 1;
+}
+
+/*   BARRIERS   */
+.firstBarrier
+{
+    position: absolute;
+    cursor: grab;
+    width: 250%;
+    height: 12%;
+    right: 0;
+    top: 79%;
+    background-image: url(../images/Barrier1Image.png);
+    background-repeat: no-repeat;
+}
+.secondBarrier
+{
+    position: absolute;
+    width: 100%;
+    height: 27%;
+    right: 0;
+    top: 34%;
+    z-index: 2;
+    background-image: url(../images/Barrier2Image.png);
+    background-repeat: no-repeat;
+}
+.secondBarrierBreaker
+{
+    position: absolute;
+    cursor: grab;
+    width: 100%;
+    height: 27%;
+    right: 150%;
+    top: 5%;
+    z-index: 3;
+    background-image: url(../images/Barrier2Image-2.png);
+    background-repeat: no-repeat;
+}
+.thirdBarrier
+{
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    right: 0;
+    top: 45%;
+    z-index: 2;
+    background-color: rgba(0, 255, 255, 0.515);
+}
+.thirdBarrierBreaker
+{
+    position: absolute;
+    cursor: grab;
+    width: 80%;
+    height: 27%;
+    right: 150%;
+    top: 0%;
+    animation-timing-function: linear;
+    background-image: url(../images/Barrier3Image.png);
+    background-repeat: no-repeat;
+}
+.fourthBarrier
+{
+    position: absolute;
+    width: 70%;
+    height: 6.5%;
+    right: 0;
+    top: 393.5%;
+    background-image: url(../images/Barrier4Image.png);
+}
+.fourthBarrierBreaker
+{
+    position: absolute;
+    cursor: grab;
+    width: 4%;
+    height: 20%;
+    left: 10%;
+    top: 380%;
+    z-index: 1;
+    background-image: url(../images/Barrier4ImageOFF.png);
+    background-repeat: no-repeat;
+}
+.fourthBarrierBreaker2
+{
+    position: absolute;
+    width: 250%;
+    height: 20%;
+    right: -20%;
+    top: 103.6%;
+    z-index: 1;
+    background-image: url(../images/Barrier4Image-2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*   SCROLLER'S WAY   */
+.firstFall
+{
+    animation: firstFall 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    background-image: url(../images/Scroller.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+.secondFall
+{
+    animation: secondFall 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    background-image: url(../images/Scroller.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+.thirdFall
+{
+    animation: thirdFall 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0,1,2,3);
+    background-image: url(../images/Scroller.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+.fourthFall
+{
+    animation: fourthFall 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1,1,0);
+    background-image: url(../images/Scroller.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+.trolleyRide
+{
+    animation: trolleyRideForScroller 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    background-image: url(../images/Scroller.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+.cutaway
+{
+    animation: cutaway 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    cursor: grab;
+    background-image: url(../images/Scroller.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+.openContacts
+{
+    animation: openContacts 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.openContacts
+{
+    animation: openContacts 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    background-image: 'none';
+}
+.cutawayText
+{
+    width: 153%;
+    height: 68%;
+    transform: rotate(-90deg);
+    margin-top: 24%;
+    margin-left: -20%;
+    font-size: 0.4rem;
+}

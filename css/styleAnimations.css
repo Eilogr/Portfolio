@@ -1,0 +1,141 @@
+/*   SCROLLER   */
+@keyframes firstFall
+{
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(70vh);
+    }
+}
+@keyframes secondFall
+{
+    0% {
+      transform: translateY(70vh);
+    }
+    100% {
+      transform: translateY(130vh);
+    }
+}
+@keyframes thirdFall
+{
+    0% {
+      transform: translateY(130vh);
+    }
+    30% {
+      transform: translateY(270vh);
+    }
+    65% {
+        transform: translateY(230vh);
+      }
+    100% {
+        transform: translateY(240vh);
+    }
+}
+@keyframes waterFall
+{
+    0% {
+      transform: translateY(0vh);
+    }
+    100% {
+        transform: translateY(240vh);
+    }
+}
+@keyframes fourthFall
+{
+    0% {
+      transform: translateY(240vh);
+    }
+    80% {
+      transform: translateY(290vh);
+    }
+    100% {
+        transform: translateY(380vh);
+    }
+}
+@keyframes trolleyRide
+{
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vh);
+    }
+}
+@keyframes trolleyRideForScroller
+{
+    0% {
+      transform: translate(0, 380vh);
+    }
+    100% {
+        transform: translate(-100vh, 380vh);
+    }
+}
+@keyframes cutaway
+{
+    0% {
+        transform: translate(-100vh, 380vh);
+    }
+    50% {
+        transform: translate(-100vh, 377vh);
+    }
+    100% {
+          transform: translate(-100vh, 380vh);
+    }
+}
+@keyframes openContacts
+{
+    0% {
+        border-color: white;
+        transform: translate(-100vh, 380vh);
+    }
+    50% {
+        border-color: white;
+        transform: translate(-100vh, 330vh) rotate(90deg) scale(350%, 450%);
+    }
+    100% {
+        border-color: white;
+        transform: translate(-100vh, 330vh) rotate(90deg) scale(700%, 900%); 
+    }
+}
+
+/*   BODY'S ANIMATIONS   */
+
+@keyframes makeTitle
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100% 
+    {
+        opacity: 1;}
+}
+@keyframes progressLoad
+{
+    0%
+    {
+        width: 0;
+    }
+    100% 
+    {
+        width: 66.66%;}
+}
+@keyframes fromTop
+{
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
+@keyframes fromDown
+{
+    0% {
+      transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
